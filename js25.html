@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sorting Number</title>
+    <link rel="stylesheet" href="fa/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .do-active{
+            background: yellow !important;
+        }
+    </style>
+</head>
+  <body>
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header">Sorting Number</div>
+                    <div class="card-body vh-100">
+                        <!-- selected number block-->
+                        <div class="row justify-content-center">
+                            <div class="col-2 selected-number text-center h1 my-4">2</div>
+                        </div>
+                        <!-- end selected number block-->
+
+                        <!-- show number block-->
+                        <div class="show-number row justify-content-center"></div>
+                        <!-- end selected number block-->
+
+                        <!-- button block-->
+                        <div class="row justify-content-center">
+                            <div class="col-2 justify-content-center row">
+                                <button type="button" class="btn btn-backward"><i class="fa-solid fa-backward-step"></i></button>
+                            </div>
+                            <div class="col-2 row justify-content-center">
+                                <button type="button" class="btn btn-forward"><i class="fa-solid fa-forward-step"></i></button>
+                            </div>
+                        </div>
+                        <!-- end  button block-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+
+        $(()=>{
+
+            let ori_nums=[5,2,1,4,3];
+
+            let nums=ori_nums.map((n)=>n);
+
+            let s_n=nums[0];
+
+            $(".selected-number").html(nums[0]);
+
+            let all_a=()=>{
+                let i_a=$(".show-number a");
+                i_a[0].classList.add("do-active");
+            }
+
+            $("body").on("click", ".show-number a", (e)=>{
+                s_n=e.target.textContent;
+                $(".selected-number").html(s_n);
+                $(".show-number a").removeClass("do-active");
+                e.target.classList.add("do-active");
+            });
+            
+            let show_number=()=>{
+                nums.map((n)=>{
+                    $(".show-number").append(`
+                        <a href="#!" class="btn col-1 bg-info">${n}</a>
+                    `);
+                });
+                all_a();
+            }
+            show_number();
+
+        })
+
+    </script>
+  </body>
+</html>
