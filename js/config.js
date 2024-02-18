@@ -23,7 +23,7 @@ export default {
 	controlsTutorial: true,
 
 	// Determines where controls appear, "edges" or "bottom-right"
-	controlsLayout: 'bottom-right',
+	controlsLayout: 'bottom-left',
 
 	// Visibility rule for backwards navigation arrows; "faded", "hidden"
 	// or "visible"

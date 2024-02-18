@@ -4,20 +4,1099 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Web Development Level - 1</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 	<body>
 		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+			<div class="slides" >
+				<section data-transition="convex">
+					<h2>Web Development Level - 1</h2>	
+					<pre><code data-trim data-noescape>
+						let instructor = {
+							name : "Khaing Win",
+							education  :  "B.Sc (Chemistry)",
+							experience : ["Linux OS", "PHP","Laravel","Vue JS", "Node JS"]
+						}
+					</code></pre>			
+					
+				</section >	
+				
+				<section data-transition="convex">
+					<section  data-transition="convex"><div>Linux OS Foundation for Web Development</div></section>
+					<section  data-transition="convex">
+						<div>HTML5</div>
+					</section>
+					<section  data-transition="convex">						
+						<div>CSS3</div>
+					</section>
+					<section data-transition="convex">						
+						<div>JAVASCRIPT</div>
+					</section>
+					<section data-transition="convex">						
+						<div>JQuery</div>
+					</section>
+					<section data-transition="convex">						
+						<div>Bootstrap</div>
+					</section>	
+					<section data-transition="convex">
+						<div>Linux OS Foundation for Web Development</div>
+						<div>HTML5</div>
+						<div>CSS3</div>
+						<div>JAVASCRIPT</div>
+						<div>JQuery</div>
+						<div>Bootstrap</div>
+					</section>			
+				</section>
+				<section data-transition="convex">
+					<div>World Wide Web</div>
+						<section data-transition="convex">
+							<img data-src="img/http.png">
+						</section>
+						<section data-transition="convex">
+								<div>Client</div>
+								<div>Server</div>
+								<div>Protocol</div>
+						</section>
+						<section data-transition="convex">
+							<div>Client</div>
+							<pre><code>
+								User,
+								Device,
+								User Agent
+							</code></pre>
+					</section>
+					<section data-transition="convex">
+						<div>Server</div>
+						<pre><code>
+							Server OS,
+							Service (Web Server, HTTP, 80, HTTPS, 443)
+						</code></pre>
+				</section>
+				</section>
+				<section data-transition="convex">
+						<div>CSS (Cascading Stylesheet)</div>
+						<section data-transition="convex">
+							<pre><code>
+								Inline CSS
+								Internal CSS
+								External CSS
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Inline CSS</div>
+							<pre>
+							<code>
+								<div style="color: yellow; font-size: 20px;">Hello From HTML.</div>
+							</code>
+						</pre>
+						</section>
+						<section data-transition="convex">
+							<div>Internal CSS</div>
+							<pre>
+							<code>
+								//head
+									<style>
+										div{
+											color: yellow;
+											font-size: 20px;
+										}
+									</style>
+
+								//body
+									<div>Hello From HTML.</div>
+							</code>
+						</pre>
+						</section>
+						<section data-transition="convex">
+							<div>External CSS</div>
+							<pre><code>
+								//style.css
+								div {
+									color: yellow;
+									font-size: 20px;
+								}
+								
+								//index.html
+								//head
+								<link rel="stylesheet" href="style.css">
+
+								//body
+								<div>Hello From HTML.</div>
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+								<div>CSS Syntax</div>
+								<pre><code>
+									div {
+										color: yellow;
+										font-size: 20px;
+									}
+									//div - Selector
+									//color, font-size - Property
+									//yellow, 20px - Value
+								</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>CSS Selector</div>
+							<pre><code>
+								Element Selector
+								id Selector
+								Class Selector
+								Child Selector
+								Descendent Selector
+								Attribute Selector								
+							</code></pre>
+					</section>
+				</section>
+				<section data-transition="convex">
+						<section data-transition="convex">
+								<div>Programming Language</div>
+						</section>
+						<section data-transition="convex">
+							<div>Compiled Language</div>
+						</section>
+						<section data-transition="convex">
+							<div>Interpreted (Script) Language</div>
+						</section>
+				</section>
+
+				<section data-transition="convex">
+						<div>Javascript Variables</div>
+						<section data-transition="convex">
+							<pre><code data-trim data-noescape>
+									var a;
+									var b="Hello";
+									var c=2024;
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<pre><code data-trim data-noescape>
+									var abc; //small letter
+									var DEF; //capital letter
+									var abcDEF;
+									var abcDEF123; //number , can't start with number
+									var abc_def; //underscore , no dashed
+									//+,-*.#@& , special character not include
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							Case sensitive
+						</section>
+						<section data-transition="convex">
+								<pre><code>
+									var name="Mg Mg";
+									let age=30;
+								</code></pre>
+						</section>
+						<section data-transition="convex">
+								<div>Block scope variable</div>
+						</section>
+						<section data-transition="convex">
+							<pre><code>
+								let age=19, name="Mg Mg", address="Mawlamyaing";
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Constant variable</div>
+							<pre><code>
+								const db_passwd="p@ssw0rd";
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Coding is working in Line by line</div>
+							<pre><code>
+								 a+b;
+								 let a=10;
+								 let b=20;
+							</code></pre>
+							
+						</section>
+							
+						   <section data-transition="convex">
+							<div>Variable hoisting</div>
+							<pre><code>
+								 a+b;
+								 var a=10;
+								 var b=20;
+							</code></pre>
+							<pre><code>							
+								var a;
+								var b;
+								a+b;
+								a=10;
+								b=20;
+							
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+								<div>Debugging output</div>
+								<pre><code>
+									console.log(); //method, function
+									console.log("Hello how are you ?"); //String;
+
+									let a="Hello how are you ?";
+									console.log(a); //vairable
+								</code></pre>
+						</section>
+				</section>
+
+				<section data-transition="convex">
+						<div>Javascript data types</div>
+						<section data-transition="convex">
+							<pre><code>
+								Number
+								Boolean
+								String
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Special data types</div>
+							<pre><code>
+								Undefine
+								null
+								NaN
+							</code></pre>
+						</section>
+				</section>
+
+				<section data-transition="convex">
+						<div>Javascript Expressions, Statements & Operators</div>
+						<section data-transition="convex">
+								<pre><code>
+									let a=1+2; //Statement
+
+									1+2 //Expressions
+								</code></pre>
+						</section>
+						<section data-transition="convex">
+							<pre><code>
+								//Comments
+								/*
+									Comments
+								*/
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Arithmetic Operators</div>
+							<pre><code>
+								 + //Addition
+								 - //Subtraction
+								 * //Multiplication
+								 /  //Division
+								 % //Modulus (Remainder)
+								 ++ //Increment
+								 -- //Decrement
+								 ** //Exponentiation
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<pre><code>
+								+ // String concatination
+
+								= //Assignment operator
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<pre><code>
+								let result="$" + 1 + 1; //same operator (left to right)
+
+								let result= "$" + (1+1)  //brace first
+
+								++ , --
+
+								*, /, %
+
+								+, -
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+								<div>Comparison operators</div>
+								<pre><code>
+									==, ===
+									<, <=, =>, >
+
+								</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Logical operators</div>
+							<pre><code>
+								&&, ||, !								
+							</code></pre>
+					</section>
+				</section>
+				<section data-transition="convex">
+						<div>Javascript Functions</div>
+						<section data-transition="convex">
+							<pre><code>
+								function add(){
+									let a=1;
+									let b=2;
+									console.log(a+b);
+								}
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Function parameter & arguments</div>						
+							<pre><code>
+								function add(a, b){									
+									console.log(a+b);
+								}
+								add(2,4);
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Function Return</div>						
+							<pre><code>
+								function add(a, b){									
+									return a+b;
+								}
+								let result=add(2,4);
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Default and Rest parameters</div>
+							<pre><code>
+								function add(a, b=0){									
+									console.log(a+b);
+								}
+								add(1);
+
+								function addMore(a,b, ...c){
+										console.log(c)
+								}
+								add(1,2,3,4,5);
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Function Expressions</div>
+							<pre><code>
+								let say_hello=function hello(){									
+									console.log("hello you guy.");
+								}
+								say_hello();
+								
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Anonymous or Nameless Function</div>
+							<pre><code>
+								let say_hello=function (){									
+									console.log("hello you guy.");
+								}
+								say_hello();
+								
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Anonymous or Nameless Function</div>
+							<pre><code>
+								let say_hello=function (){									
+									console.log("hello you guy.");
+								}
+								say_hello();
+								
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>IIFE (Immediately invoked function)</div>
+							<pre><code>
+								(function(){
+									console.log("i am working immediately");
+								})()							
+							
+
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Callback function</div>
+							<pre><code>						
+								
+								function doIt(num, fun){
+									let result=fun(num);
+									return result * 2;
+								}
+
+								let d=doIt(2, function(x){
+									return x ;
+								})
+
+								console.log(d);
+
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Arrow function</div>
+							<pre><code>					
+							
+								let add=function(a, b){
+									return a + b;
+								}
+
+								let add =(a, b)=>{
+									return a + b;
+								}
+
+								let add =(a, b)=> a + b;
+
+								let add = a =>  a + 1;
+
+								let greet=()=>"Hello World.";
+
+								let greet=_=>"Hello World.";
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+							<div>Function hoisting</div>
+							<pre><code>					
+							
+								add(a+b);
+								
+								function add(a, b){
+									console.log(a+b);
+								}
+
+
+								add(a, b);
+
+								let add=function(a,b){
+									console.log(a+b);
+								}
+							</code></pre>
+						</section>
+
+						<section data-transition="convex">
+							<div>Function variable scope</div>
+							<pre><code>					
+							
+								let  say_hello="Hello everybody.";
+
+								function one(){
+									let test_one="this is test one";
+									console.log(`One say ${say_hello}`);
+								}
+
+								function two(){
+									console.log(`Two say ${say_hello}`);
+								}
+							</code></pre>
+						</section>
+						
+				</section>
+				<section data-transition="convex">
+					<div>Javascript Arrays & Objects</div>
+					<section data-transition="convex">
+						<div>Javascript Arrays</div>
+						<pre><code>
+							let person=new Array("Mg Mg", 20, "mgmg@gmail.com");
+
+							let person=["Mg Mg", 20, "mgmg@gmail.com"]
+
+							let name=person[0];
+							let age=person[1];
+							let email=person[2];
+
+							person[4]="0997835363673";
+
+							console.log(person.length);
+
+							let users=[
+								["Mg Mg", 20, "mgmg@gmail.com"],
+								["Aung Aung", 19, "aung@gmail.com"]
+							]
+
+						</code></pre>
+					</section>
+					<section data-transition="convex">
+						<div>Javascript Array Methods</div>
+						<pre><code>
+							let fruits=["Apple", "Orange"];
+
+							fruits.push("Banana");
+							fruits.pop();
+							fruits.shift();
+							fruits.unshift("Mango");
+
+							let indexof_apple=fruits.indexOf("Apple");
+
+							fruits.splice(0, 1);							
+							
+						</code></pre>
+					</section>
+					<section data-transition="convex">
+						<div>Javascript Array Methods</div>
+						<pre><code>
+							let fruits=["Apple", "Orange", "Mango"];					
+
+							let string_fruits=fruits.join(",");
+
+							let u_fruits=fruits.map((f)=>{
+								return f.toUpperCase();
+							});
+
+							let num=[1,2,3];
+							let increase_num=num.map((n)=>{
+								return n + 1;
+							});
+						
+							let filter_fruits=fruits.filter((f)=>{
+								return f !== "Orange";
+							});
+
+							let reduce_fruits=fruits.filter((f)=>{
+								return f !== "Orange";
+							});
+
+							let result=num.reduce((s, n)=>{
+									return s + n;
+							});
+							
+						</code></pre>
+					</section>
+					<section data-transition="convex">
+							<div>Array spread and Destructuring</div>
+							<pre><code>
+								let fruits=["Apple", "Orange", "Banana"];
+								let animals=["Cats", "Dogs", "Birds"];
+								let result=[fruits, animals];
+
+								let result=[...fruits, ...animals];
+
+								let result=["One", "Two", "Three", ...fruits];
+
+								let n=[1,2,3];
+								function add(a,b){
+									console.log(a+b);
+								}
+
+								add(n[0], n[1]);
+
+								add(...n);
+
+								//Array Destructuring
+
+								let nums=[1,2,3];
+								let a=nums[0];
+								let b=nums[1];
+								let c=nums[2];
+
+								let [a,b,c]=nums;
+								
+							</code></pre>
+					</section>
+					<section data-transition="convex">
+							<div>String object</div>
+							<pre><code>
+								let num=5.12345;
+								let result=num.toFixed(2);
+
+								let name="Mg Mg";
+								let greet=`Hello ${name}`;
+								let address=new String("Mawlamyine");
+
+								name[0];
+								name.charAt(0);
+
+								name.toUpperCase();
+								name.toLowerCase();
+								name.trim(); //clear first and last space.
+								name.substr(); //(0, 3)cut the part as we need.
+								name.split(); // (" ")cut the string and change to array.
+							</code></pre>
+					</section>
+
+					<section data-transition="convex">
+						<div>Creating Object</div>
+						<pre><code>
+							let person={
+								name : "Mg Mg",
+								address: "Mawlamyine",
+								phone: "0985456213",
+								car: 2, 
+								sleep:function(){
+									return "Sleeping between 5 to 10 Hrs";
+								},
+								eat(){
+									return "Eating pizza.";
+								},
+								work(){
+									return `${this.name} is working for Software developer.`;
+								}
+							}
+							person.name;
+							person["address"];
+
+							let {name, address, phone}=person;
+
+							//Property shorthand
+							let name="Aung Aung";
+							let age=20;
+
+							let user={
+								name, age
+							}
+
+
+							let user={
+								name: "Ko Ko",
+								age: 12,
+								parents: {
+									father: "U Ko Ko", 
+									mother: "Daw Hla"
+								},
+								friends: [
+									"Mg Mg", "Aung Aung"
+								]
+							}
+
+							let cars=[
+								{name: "Fit", brand: "Honda", model: 2011 },
+								{name: "Wish", brand: "Toyota", model: 2002 },
+								{name: "Land Cruiser", brand: "Toyota", model: 2021 }
+							]
+
+						</code></pre>
+					</section>
+					<section data-transition="convex">
+						<div>JSON (Javascript object notation) Data format</div>
+						<pre><code>
+							let user={
+								name: "Aung Aung",
+								address : "Mawlamyine"
+							}
+
+							//No Comments
+
+							user json_user=JSON.stringify(user)
+							let user_object=JSON.parse(json_user);
+
+
+						</code></pre>
+					</section>
+				</section>
+				<section data-transition="convex">
+						<div>Javascript Control Flows and Loops</div>
+						<section data-transition="convex">
+							<div>Conditional Statement (if)</div>
+							<pre><code>
+								let mark=40;
+								if(mark < 40){
+									console.log("You failed.");
+								}else{
+									console.log("You passed.");
+								}
+
+								if(mark < 40){
+									console.log("You failed.");
+								}else if( mark < 80){
+									console.log("You passed.")
+								}else{
+									console.log("You passed with awesome result.");
+								}
+
+
+								let mark=80;
+								if(mark >= 40){
+									if(mark >= 80){
+										console.log("Awesome.");
+									}else{
+										console.log("Passed.");
+									}
+								}else{
+									console.log("Failed.");
+								}
+
+								let cars=[
+									{name: "Fit", brand: "Honda", color: "White", error: false},
+									{name: "Wish", brand: "Toyota", color: "Red", error: true},
+									{name: "Fit Shuttle", brand: "Honda", color: "Black", error: false},
+									{name: "Alphard", brand: "Toyota", color: "White", error: false},
+								]
+		
+								let  result=cars.map((car)=>{
+										if(car.color==="White"){
+											car.error=true;
+										}
+										return car;
+				
+									});
+
+
+							</code></pre>
+						</section>
+						<section data-transition="convex">
+								<div>Switch</div>
+								<pre><code>
+									let a=10;
+									let b=20;
+									switch(a+b){
+										case 10: //skip this statement
+											console.log("10");
+										case 20: //skip this statement
+											console.log("20");
+										case 30: //do this statement
+											console.log("30");
+										case 40: //do this statement
+											console.log("40");
+
+									}
+
+
+									switch(a+b){
+										case 10: //skip this statement
+											console.log("10");
+											break;
+										case 20: //skip this statement
+											console.log("20");
+											break;
+										case 30: //do this statement
+											console.log("30");
+											break;
+										case 40: //do not reach this statement
+											console.log("40");
+											break;
+										default:
+											console.log("something wrong.");		
+											break;
+
+									}
+
+									let users=[
+												{name: "Mg Mg", age: 20, gender: "m" },
+												{name: "Hla Hla", age: 12, gender: "f" },
+												{name: "Aung Aung", age: 22, gender: "M" },
+												{name: "Ma Hla", age: 21, gender: "F" },
+												{name: "Aung Hla", age: 25}
+											]
+						
+											let result=users.map((user)=>{
+												//console.log(user);
+													switch(user.gender){
+														case "m":
+														case "M":
+															user.gender="Male";
+															break;
+														case "f":
+														case "F":
+															user.gender="Female";
+															break;
+														default:
+															user.gender="Unknown";		
+													}
+													return user;
+											});
+											console.log(result);
+								</code></pre>
+						</section>
+							<section data-transition="convex">
+								<div>Condition expression (ternary operator)</div>
+								<pre><code>
+									let user={name: "Mg Mg", active : true, email: "mgmg@gmail.com"}
+									let status=user.active ? "Account is active" : "Account is inactive";
+									console.log(status);
+								</code></pre>						
+						</section>
+						<section data-transition="convex">
+							<div>Loops</div>
+							<pre><code>
+								//while
+								let count=0;
+								while(count < 5){
+									console.log(count);
+									count ++;
+								}
+							
+								//do while
+								let count=0;
+								do{
+									console.log(count);
+									count ++;
+								}while(count < 5);
+
+								let count=5;
+								do{
+									console.log(count);
+									count ++;
+								}while(count < 1);
+						
+								//for
+								let count=0;
+								for(count; count < 5; count ++){
+									console.log(count);
+								}
+
+								let nums=[10, 9, -1, 8, -2];
+								let i=0;
+								for(i; i < nums.length; i++){
+									if(nums[i] < 0) break; //continue
+									console.log(nums[i]);
+								}
+							</code></pre>						
+					</section>
+					<section data-transition="convex">
+						<div>Looping Objects and Arrays</div>
+						<pre><code>
+							let user={
+								name: "Aung Aung", 
+								email : "aung@gmail.com",
+								phone: "09383737373",
+								age : "15"
+							}
+							for(u in user){
+								console.log(`${u} is ${user[u]}` );
+							}
+
+							let users=["Mg Mg", "Aung Aung", "Tun Tun"];
+							for(u of users){
+								console.log(u);
+							}
+						</code></pre>
+					</section>
+				</section>
+				<section data-transition="convex">
+					<div>Javascript OOP (Object-Oriented Programming)</div>
+					<section data-transition="convex">
+							<div>Classes & Objects</div>
+							<pre><code>
+								class Car{
+									wheels = "4";
+									color = "White";
+									startEngine(){
+										console.log("Car is starting engine now.");
+									}
+								}
+								let fit=new Car();
+								fit.startEngine();
+
+								let car={
+									wheels : "4",
+									color : "White",
+									startEngine(){
+										console.log("Car is starting engine now.");
+									}
+								}
+							</code></pre>
+					</section>
+					<section data-transition="convex">
+						<div>Access-Control Modifier</div>
+						<pre><code>
+							//static
+							class Car{
+								static wheels = "4";
+									    color = "White";
+								static startEngine(){
+									console.log("Car is starting engine now.");
+								}
+							}
+							//public
+							//private ("# Only testing in JS for now.")
+							//protected
+
+							//Constructor
+							class Car{
+								constructor (name){
+									this.name=name;
+								}
+								drive(){
+									console.log(`${this.name} is driving...`);
+								}
+							}
+							let car=new Car("Honda fit");
+							car.drive();
+
+							//Inheritance
+							class Car{
+								constructor (name){
+									this.name=name;
+								}
+								drive(){
+									console.log(`${this.name} is driving...`);
+								}
+							}
+							class HondaFit extends Car{
+									startEngine(){
+										console.log(`${this.name} is starting engine.`);
+									}
+							}
+							let hf=new HondaFit("Honda fit 2012");
+							hf.startEngine();
+							
+
+							class Car{
+								constructor (name){
+									this.name=name;
+								}
+								drive(){
+									console.log(`${this.name} is driving...`);
+								}
+							}
+							class HondaFit extends Car{
+								constructor (name, color){		
+									super(name);							
+									this.color=color;
+								}
+									startEngine(){
+										console.log(`${this.name} is starting engine with color ${this.color}.`);
+									}
+							}
+							let car=new HondaFit("Honda fit", "White");
+							car.startEngine();
+						</code></pre>
+					</section>
+					<section data-transition="convex">
+						<div>Class expression</div>
+						<pre><code>
+							let Car=class{
+								color="White";
+								wheels=4;
+								drive(){
+									console.log("Car is driving.");
+								}
+							}
+						</code></pre>
+					</section>
+				</section>
+				<section data-transition="convex">
+					<div>Javascript Promises and async, await</div>
+					<section data-transition="convex">
+						<div>Callback function</div>
+						<pre><code>
+							console.log("one");
+							console.log("two");
+							setTimeout(()=>{console.log("working after 5 seconds")}, 5000);
+							console.log("three");
+							
+						</code></pre>
+					</section>
+					<section data-transition="convex">
+						<div>Promises</div>
+						<pre><code>
+							function x2(){
+								let result=0;
+								for(i=0; i < 200000001; i++){
+									result=i;
+								}
+								return result;
+							}
+
+							console.log("one");
+							console.log("two");
+							console.log(x2());
+							console.log("three");
+
+							function doLater(){
+								return new Promise((resolve, reject)=>{
+									let result=x2();
+									if(result){
+										 resolve(result);
+									}else{
+										 reject();
+									}
+							})
+						}
+
+						console.log("one");
+						console.log("two");
+						doLater()
+						.then((res)=>{
+							console.log(res);
+						})
+						.catch((rej)=>{
+							console.log(rej);
+						});
+						console.log("three");							
+						</code></pre>
+					</section>
+					<section data-transition="convex">
+						<div>Async, Await</div>
+						<pre><code>
+							function x5(){
+								let result=0;
+								let i=0;
+								for(i; i < 50000000; i++){
+										result +=i;
+								}
+								return result;
+							}
+					
+							async function doLater(){
+								let data=await x5();
+								console.log(data);
+							}
+					
+							console.log("One");
+							console.log("Two");
+							doLater();
+							console.log("Three");
+						</code></pre>
+					</section>
+
+				</section>
+				<section data-transition="convex">
+					<div>Node JS</div>
+					<section data-transition="convex">
+						<pre><code>
+							function add(a,b){
+								return a +b;
+							}
+							let data=add(1,2);
+							console.log(data);
+	
+							node file_name.js
+						</code></pre>
+					</section>
+					<section data-transition="convex">
+						<div>Node Module</div>
+						<pre><code>
+							//data.js
+							function add(a, b){
+								return a + b;
+							}							
+							function subs(a, b){
+								return a - b;
+							}							
+							module.exports={add,subs};
+
+							//index.js
+							const {add, subs}=require("./data.js");
+							console.log(subs(3, 1));
+						</code></pre>
+					</section>
+					<section data-transition="convex">
+						<div>ES6 Module</div>
+						<pre><code>
+							//data.mjs
+							export default function add(a, b){
+								return a + b;
+							}
+							
+							function add(a, b){
+								return a + b;
+							}
+							export default add;
+
+
+							function add(a, b){
+								return a + b;
+							}
+							function subs(a, b){
+								return a - b;
+							}							
+							export  {add, subs}
+
+							//index.mjs
+							import {add, subs} from "./data.mjs"
+							console.log(subs(2, 3));
+						</code></pre>
+					</section>
+				</section>
+				
 			</div>
 		</div>
 
@@ -31,10 +1110,12 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				slideNumber: true,
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				width: 960,
 			});
+
 		</script>
 	</body>
 </html>
